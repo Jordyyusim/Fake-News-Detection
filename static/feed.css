@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica;
+}
+
+nav{
+    background-color: rgb(0, 17, 22);
+    height: 80px;
+    width: 100%
+}
+
+.logo{
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 80px;
+    font-weight: bolder;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height:  80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+    border-radius: 3px;
+    padding: 7px 13px;
+}
+
+a.active, a:hover{
+    color: gray;
+    transition: .5s;
+}
+
+footer{
+    width: 100%;
+    line-height: 15px;
+}
+
+.foot{
+    background-color:rgba(0, 0, 0, 0.753);
+    padding: 10px 20px;
+}
+
+.foot-logo{
+    color: white;
+    font-size: 24px; 
+    font-weight: 600;
+}
+
+.social{
+    margin: 10px 0;
+}
+
+.social a{
+    color: white;
+    margin-right: 20px;
+    font-size: 16px;
+    transition: .3s linear;
+}
+
+.social a:hover{
+    color: black;
+}
+
+.copyrights{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content{
+    height: 62vh;
+    text-align: center;
+}
+
+h1{
+    margin-top: 80px;
+}
+
+.border{
+    width: 100px;
+    height: 4px;
+    background: black;
+    margin-left: 583px;
+    margin-top: 20px
+}
+
+.sub {
+    border: 3px solid black;
+    height: 150px;
+    width: 500px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin: 30px ;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+}
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    left: 600px;
+  }
+  
+input[type=submit]:hover {
+    background-color: gray;
+  }

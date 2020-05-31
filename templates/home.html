@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Buster</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+        .pred{
+    position: absolute;
+    top: 375px;
+    left: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-style: italic;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <label class='logo'>FakeNewsBuster.com</label>
+        <ul>
+            <li><a class='active' href='http://127.0.0.1:100/'>Home</a></li>
+            <li><a href='http://127.0.0.1:100/About'>About</a></li>
+            <li><a href='http://127.0.0.1:100/Feedback'>Feed Back</a></li>
+        </ul>
+    </nav>
+    <div class='content'>
+        <h1 class='first'>Check it!</h1>
+        <h1 class='second'>Before Spread it.</h1>
+        <div class="border"></div>
+    </div>
+    <div class='main'>
+        <form action="{{ url_for('result') }}" method="POST">
+            <input type="text" id='n' name="news" placeholder="Enter News URL Here . ." required="required">
+            <button id='submit' type="submit"> Submit </button>
+        </form>
+    </div>
+    <div class='pred'>
+        {{ pred_text }}
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="left-foot">
+                <label class='foot-logo'>FakeNewsBuster.com</label>
+                <div class="social">
+                    <a href="www.github"><i class="fab fa-github"></i></a>
+                    <a href="www.linkedin.com/in/jordyyusim/"><i class="fab fa-linkedin"></i></a>
+                    <a href="www.instagram.com/jordyyusim"><i class="fab fa-instagram"></i></a>
+                    <a href="www.twitter.com/jordyyusim"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p class="copyrights">&copy; 2020 Jordy Final Project</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
